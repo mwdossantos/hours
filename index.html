@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Checker</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <div class="h-container">
+                <p>Uurloonuru</p>
+                <img src="logo.png" class="pf-image">
+            </div>
+        </header>
+
+        <main>
+            <div class="rate-container">
+                <p class="label">Jouw uurloon</p>
+                <input placeholder="Bijvoorbeeld €5,57" type="number" id="RateField">
+                <button id="GetRateButton">Enter Rate</button>
+                <p id="Rate">Jouw uurloon wordt hier weergeven</p>
+            </div>
+
+            <div class="hours-container">
+                <p class="label">Jouw gewerkte uren</p>
+                <input placeholder="Bijvoorbeeld 6,25" type="number" id="HoursField">
+                <button id="CalcSalaryButton">Voeg toe aan mijn loonstrook</button>
+                
+            </div>
+
+            <div class="loggedhours-container">
+                    <div id="hour-id"></div>
+                    <div id="Hours"></div>
+                    <button id="DeleteLastHour">Verwijder laatst toegevoegde uren</button>
+                    <div class="divider"></div>
+                    <p id="Salary">Jouw salaris wordt hier berekend</p>
+            </div>
+        </main>
+        <script src="jquery.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+        <script src="logic.js"></script>
+    </body>
+</html>
